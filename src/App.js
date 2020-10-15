@@ -9,5 +9,5 @@ function App() {
     </div>
   );
 }
-// gowno
+// gowno to moje placki 
 export default App;
