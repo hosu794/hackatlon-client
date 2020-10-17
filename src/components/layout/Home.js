@@ -3,16 +3,7 @@ import React, {useState} from 'react'
 const Home = (props) => {
 
 
-    const [state, setState] = useState(0);
-    function showAlert() {
-        alert(state);
-    }
-
-    function addOne() {
-        setState(state + 1);
-    }
-
- 
+  
 
 
     return(
