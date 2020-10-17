@@ -1,216 +1,212 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 body {
-    background-color: #1B1E2F;
-    font-family: 'Mina', sans-serif;
-    color: #FFFFFF;
+  background-color: #1b1e2f;
+  font-family: "Mina", sans-serif;
+  color: #ffffff;
 }
-/* NAGŁÓWEK */ 
+/* NAGŁÓWEK */
 header {
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    width: 90%;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
 }
 
-/* LOGO */ 
+/* LOGO */
 .logo-napis h1 {
-    color: #FFFFFF;
-    font-family: 'Orbitron', sans-serif;;
-    font-size: 30px;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
 }
 
-/* NAWIGACJA */ 
+/* NAWIGACJA */
 nav {
-    flex: 1;
+  flex: 1;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    margin-left: 35%;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-left: 35%;
 }
 
 .nav-link {
-    display: inline-block;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 20px;
-    padding: 10px 20px;
-    margin: auto;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: auto;
 }
 
 .zalogujburger {
-    display: none;
+  display: none;
 }
 
 .nav-link::after {
-    content:'';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #8DDCA4;
-    transition: width .3s;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #8ddca4;
+  transition: width 0.3s;
 }
 
 .nav-link:hover::after {
-    width: 100%;
-    transition: width .3s;
+  width: 100%;
+  transition: width 0.3s;
 }
 
-/* PRZYCISK LOGOWANIA */ 
+/* PRZYCISK LOGOWANIA */
 .logowanie-przycisk {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: solid 3px #2E45CE;
-    border-radius: 7%;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: solid 3px #2e45ce;
+  border-radius: 7%;
+  position: relative;
+  z-index: 1;
 }
 
 .logowanie-przycisk:hover {
-    color: #FFFFFF;
-    cursor: pointer;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .logowanie-przycisk:before {
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: "";
-    background-color: #2E45CE;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #2e45ce;
 }
 
 .logowanie-przycisk:hover:before {
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    z-index: -1;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
 
-/* BURGER */ 
+/* BURGER */
 .burger {
-    cursor: pointer; 
+  cursor: pointer;
 }
 .burger div {
-    width: 25px;
-    height: 5px;
-    background-color: #FFFFFF;
-    margin: 5px;
-    margin-left: 80%;
-    display: none;
+  width: 25px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 5px;
+  margin-left: 80%;
+  display: none;
 }
 
 .sekcja-1 {
-    height: 74vh;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    margin-top: 7%;
+  height: 74vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-top: 7%;
 }
 
 .intro-image {
-    margin-right: 15%;
+  margin-right: 15%;
 }
 
 .intro {
-    width: 50%;
+  width: 50%;
 }
 #onas {
-    color: #8DDCA4;
+  color: #8ddca4;
 }
 #paragraf1 {
-    font-size: 40px;
-    font-weight: bolder;
-    padding: 2vh 0;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 2vh 0;
 }
 #paragraf2 {
-    font-size: 18px;
-    font-weight: lighter;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
 .rejestracja {
-    border: solid 1px #2E45CE;
-    border-radius: 7%;
-    text-align: center;
-    width: 20vh;
-    padding: 20px;
-    margin-top: 5vh;
-    background-color: #2E45CE;
+  border: solid 1px #2e45ce;
+  border-radius: 7%;
+  text-align: center;
+  width: 20vh;
+  padding: 20px;
+  margin-top: 5vh;
+  background-color: #2e45ce;
 }
 .rejestracja a {
-    text-decoration: none;
-    color: #FFFFFF;
+  text-decoration: none;
+  color: #ffffff;
 }
 .sekcja-2 {
-    background-color: #EEEEEE;
-    min-height: 85vh;
+  background-color: #eeeeee;
+  min-height: 85vh;
 }
-
 
 footer {
-    height: 20vh;
-    text-align: center;
-    padding: 10vh 0;
+  height: 20vh;
+  text-align: center;
+  padding: 10vh 0;
 }
-
 
 @media only screen and (max-width: 1060px) {
-    body {
-        overflow-x: hidden;
-    }
-    .logowanie-przycisk {
-        display: none;
-    }
-    .burger div {
-        display: flex;
-    }
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #1B1E2F;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: translateX(150%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li {
-        opacity: 100;
-    }
-    .nav-link {
-        padding: 10vh 49vh;
-    }
-    .nav-link:hover {
-        background-color: #2E45CE;
-    }
-    .nav-active {
-        transform: translateX(0%);
-    }
-    .zalogujburger {
+  body {
+    overflow-x: hidden;
+  }
+  .logowanie-przycisk {
+    display: none;
+  }
+  .burger div {
+    display: flex;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #1b1e2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(150%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 100;
+  }
+  .nav-link {
+    padding: 10vh 49vh;
+  }
+  .nav-link:hover {
+    background-color: #2e45ce;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .zalogujburger {
     display: inline-block;
+  }
 }
-
-}
-
