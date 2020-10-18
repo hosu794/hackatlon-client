@@ -8,7 +8,6 @@ function Header() {
     
     function toggleNavbar() {
         setActive(!active);
-        console.log(active);
     }
     return (
         <header>
