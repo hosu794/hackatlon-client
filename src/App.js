@@ -48,5 +48,5 @@ function App() {
     </div>
   );
 }
-// gowno to moje placki 
+
 export default App;
