@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #1b1e2f;
+  font-family: "Mina", sans-serif;
+  color: #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAGŁÓWEK */
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+}
+
+/* LOGO */
+.logo-napis h1 {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+}
+
+/* NAWIGACJA */
+nav {
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-left: 35%;
+}
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: auto;
+
+}
+
+.zalogujburger {
+  display: none;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #8ddca4;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+/* PRZYCISK LOGOWANIA */
+.logowanie-przycisk {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: solid 3px #2e45ce;
+  border-radius: 7%;
+  position: relative;
+  z-index: 1;
+}
+
+.logowanie-przycisk:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.logowanie-przycisk:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #2e45ce;
+}
+
+.logowanie-przycisk:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* BURGER */
+.burger {
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 5px;
+  margin-left: 80%;
+  display: none;
+}
+
+.sekcja-1 {
+  height: 75vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-top: 5%;
+}
+
+.intro-image {
+  margin-left: 15%;
+  filter: drop-shadow(4px 4px 0.6px #8ddca4);
+}
+
+.presentation {
+  display: flex;
+}
+
+.intro {
+  width: 50%;
+  margin-top: 6%;
+}
+#onas {
+  color: #8ddca4;
+}
+#paragraf1 {
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 2vh 0;
+}
+#paragraf2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.rejestracja {
+  border: solid 1px #2e45ce;
+  border-radius: 7%;
+  text-align: center;
+  width: 20vh;
+  padding: 20px;
+  margin-top: 5vh;
+  background-color: #2e45ce;
+}
+.rejestracja a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.sekcja-2 {
+  background-color: #eeeeee;
+  min-height: 85vh;
+}
+
+.Kategorie {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.K1 {
+  height: 300px;
+  width: 300px;
+  border: solid 5px #1b1e2f;
+  border-radius: 15%;
+  margin: 20px;
+  margin-right: 50px;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer {
+  height: 20vh;
+  text-align: center;
+  padding: 10vh 0;
+}
+
+@media only screen and (max-width: 1060px) {
+  body {
+    overflow-x: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .logowanie-przycisk {
+    display: none;
   }
+  .burger div {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(150%);
+    transition: transform 0.5s ease-in;
+    margin-top: 20px;
+    z-index: 1;
+    background-image: url(./assets/siatkarz.png);
+    background-color: #1b1e2f;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+  }
+  .nav-links li {
+    opacity: 100;
+  }
+  .nav-link {
+    padding: 9vh 50vh;
+  }
+  .nav-link:hover {
+    background-color: #2e45ce;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .zalogujburger {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .intro-image  {
+    width: 90%;
+  }
+  .intro {
+    width: 99%;
+    margin: auto;
+  }
+  
+  
+  .rejestracja {
+    width: 40%;
+  }
+  #paragraf2 {
+    margin-bottom: 80px;
+    margin-top: 15px;
+  }
+  .sekcja-1 {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .intro-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav-links {
+    background-position-x: 10px;
+  }
+  .rejestracja {
+    width: 45%;
+  }
+
 }
