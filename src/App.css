@@ -47,7 +47,6 @@ nav {
   font-size: 20px;
   padding: 10px 20px;
   margin: auto;
-
 }
 
 .zalogujburger {
@@ -246,15 +245,14 @@ footer {
 }
 
 @media only screen and (max-width: 1210px) {
-  .intro-image  {
+  .intro-image {
     width: 90%;
   }
   .intro {
     width: 99%;
     margin: auto;
   }
-  
-  
+
   .rejestracja {
     width: 40%;
   }
@@ -280,7 +278,6 @@ footer {
   .rejestracja {
     width: 45%;
   }
-
 }
 /*obrazek*/
 .obrazek {
@@ -295,12 +292,12 @@ footer {
   filter: drop-shadow(4px 4px 0.6px #8ddca4);
 }
 /*dolacz do nas*/
-#start{
+#start {
   color: white;
   position: absolute;
   top: 20%;
   left: 78%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: left;
   font-display: flex;
   font-size: 35px;
@@ -311,9 +308,9 @@ footer {
   position: absolute;
   top: 27%;
   left: 76%;
-  transform: translate(-50%,-20%);
+  transform: translate(-50%, -20%);
   text-align: left;
-  font-family: 'Mina', sans-serif;
+  font-family: "Mina", sans-serif;
 }
 /*odnoscnik zaloguj*/
 #zaloguj {
@@ -321,26 +318,23 @@ footer {
   position: absolute;
   top: 27.5%;
   left: 87%;
-  transform: translate(-50%,-20%);
+  transform: translate(-50%, -20%);
   text-align: left;
-  font-family: 'Mina', sans-serif;
+  font-family: "Mina", sans-serif;
   font-size: 19px;
 }
 #zaloguj:hover {
-  color: #3066BE;
+  color: #3066be;
 }
-
 
 /*checkbox*/
 .checkbox {
- 
   color: white;
   font-size: 12px;
   bottom: 5px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-
 }
 
 /*miejsca na tekst*/
@@ -349,26 +343,26 @@ footer {
   position: absolute;
   top: 55%;
   left: 80%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: left;
 }
 /*pole miejsca na tekst(wyglad w srodku)*/
-.res input{
-width: 80%;
-padding: 10px 0;
-margin: 5px 0;
-border-left: 0;
-border-top: 0;
-border-right: 0;
-border-bottom: 2px solid #3066BE;
-outline: none;
-background: transparent;
-color: #FFFFFF;
-font-family: 'Mina', sans-serif;;
-font-size: 18px;
+.res input {
+  width: 80%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #3066be;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-family: "Mina", sans-serif;
+  font-size: 18px;
 }
-.res input:focus{
-  border-bottom: 2px solid  #8DDCA4;
+.res input:focus {
+  border-bottom: 2px solid #8ddca4;
 }
 
 /*przycisk stworz konto*/
@@ -377,18 +371,17 @@ font-size: 18px;
   justify-content: flex-end;
   font-size: 20px;
   letter-spacing: 2px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 15px;
-  border: solid 3px #8DDCA4;
+  border: solid 3px #8ddca4;
   border-radius: 7%;
   position: relative;
   z-index: 1;
   background-color: transparent;
-  
 }
 
 .res button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -401,7 +394,7 @@ font-size: 18px;
   bottom: 0;
   opacity: 0;
   content: "";
-  background-color:#8DDCA4;
+  background-color: #8ddca4;
 }
 
 .res button:hover:before {
@@ -410,4 +403,8 @@ font-size: 18px;
   right: 0;
   opacity: 1;
   z-index: -1;
+}
+
+.is-danger {
+  color: rgb(216, 69, 69);
 }
