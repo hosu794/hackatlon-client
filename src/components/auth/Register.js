@@ -4,8 +4,7 @@ import pilkarz from "../../assets/pilkarz.png"
 
  function Register() {
     return (
-        <main>
-                
+        <main> 
                 <div className="App">
                     <div className="box">
                         <div className="obrazek">
