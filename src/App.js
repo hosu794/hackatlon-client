@@ -18,6 +18,7 @@ import {PrivateRoute} from './routes'
 import { alertActions, userActions } from "./actions";
 import { history } from "./utils";
 import Home from "./components/layout/Home";
+import PathTasks from "./components/pathitem/PathTasks";
 
 function App() {
 
@@ -41,6 +42,8 @@ function App() {
       <Route path="/" component={Home} exact />
       <Route path="/login" component={Login} exact />
       <Route path="/register" component={Register} exact />
+      <PrivateRoute path="/path/:id" component={PathTasks} />
+    
       </Switch>
       <Footer />
       </Router>
