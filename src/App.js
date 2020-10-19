@@ -3,7 +3,6 @@ import "./App.css";
 import {useDispatch, useSelector} from 'react-redux'
 import Header from "./components/layout/Header"
 import About from "./components/layout/About"
-import Kategorie from "./components/layout/Kategorie"
 import Footer from "./components/layout/Footer"
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'

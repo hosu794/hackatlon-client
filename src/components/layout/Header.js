@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 
+import {Link} from 'react-router-dom'
+
 function Header() {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -12,8 +14,11 @@ function Header() {
     return (
         <header>
         <div className="logo-napis">
-            <a href="index.html">
+            <a>
+                <Link to="/">
                 <h1>HABITER</h1>
+                </Link>
+               
             </a>
         </div>
         <nav className="navbar">
