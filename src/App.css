@@ -408,3 +408,7 @@ footer {
 .is-danger {
   color: rgb(216, 69, 69);
 }
+
+.is-white {
+  color: #fff;
+}
