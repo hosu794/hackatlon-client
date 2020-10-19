@@ -1,12 +1,22 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 import {Link} from 'react-router-dom'
+
+import {useSelector, useDispatch} from 'react-redux'
+import LoginButton from '../auth/LoginButton';
+import LoggedButton from '../auth/LoggedButton';
 
 function Header() {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
 
+    const loggedIn = useSelector((state) => state.authentication.loggedIn);
+    const user = useSelector((state) => state.authentication.user);
+
+
     const [active, setActive] = useState(false);
+
+   
     
     function toggleNavbar() {
         setActive(!active);
@@ -34,9 +44,7 @@ function Header() {
                     <div className="line3"></div>
                 </div>
         </nav>
-        <a className="logowanie-przycisk" href="">
-            <h5>Zaloguj się</h5>
-        </a>
+        {loggedIn ? <LoggedButton /> : <LoginButton />}
     </header>
     );
 }

@@ -17,7 +17,7 @@ const Paths = () => {
         <section className="sekcja-2">
             <div className="Kategorie">
                 {content ? content.map(item => (
-                  <PathItem  title={item.title} />
+                  <PathItem key={item.id} title={item.title} />
                 )) : null}
             </div>
         </section>
