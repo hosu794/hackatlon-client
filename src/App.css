@@ -120,7 +120,7 @@ nav {
 }
 
 .sekcja-1 {
-  height: 75vh;
+  min-height: 75vh;
   width: 90%;
   margin: auto;
   display: flex;
@@ -157,33 +157,55 @@ nav {
   border: solid 1px #2e45ce;
   border-radius: 7%;
   text-align: center;
-  width: 20vh;
+  width: 30vh;
   padding: 20px;
   margin-top: 5vh;
+  margin-bottom: 20px;
   background-color: #2e45ce;
 }
 .rejestracja a {
   text-decoration: none;
   color: #ffffff;
 }
+#paragraf1,#paragraf2 {
+    width: 80%;
+  }
 .sekcja-2 {
   background-color: #eeeeee;
-  min-height: 85vh;
+  min-height: 80vh;
 }
 
 .Kategorie {
   display: flex;
-  flex-wrap: wrap;
   padding: 25px;
   justify-content: center;
 }
+#kategorie-napis {
+  color: #1F1F1F;
+  font-size: 35px;
+  padding-top: 3%;
+}
+.kategorie-napis-div {
+  width: 20%;
+  margin-left: 5%;
+}
 
 .K1 {
-  height: 300px;
-  width: 300px;
-  border: solid 5px #1b1e2f;
-  border-radius: 15%;
-  margin: 20px;
+  height: 600px;
+  width: 400px;
+  border: solid 5px #1F1F1F;
+  background-color: #1F1F1F;
+  border-radius: 2%;
+  margin: 10px;
+  margin-right: 70px;
+}
+.K2 {
+  height: 600px;
+  width: 400px;
+  border: solid 5px #2e45ce;
+  background-color: #2e45ce;
+  border-radius: 2%;
+  margin: 10px;
   margin-right: 50px;
 }
 .break {
@@ -231,7 +253,7 @@ footer {
     opacity: 100;
   }
   .nav-link {
-    padding: 9vh 50vh;
+    padding: 9vh 47vh;
   }
   .nav-link:hover {
     background-color: #2e45ce;
@@ -247,14 +269,13 @@ footer {
 @media only screen and (max-width: 1210px) {
   .intro-image {
     width: 90%;
+    z-index: -1;
   }
   .intro {
-    width: 99%;
-    margin: auto;
+    width: 100%;
   }
-
   .rejestracja {
-    width: 40%;
+    width: 50%;
   }
   #paragraf2 {
     margin-bottom: 80px;
@@ -265,13 +286,35 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1274px) {
   .intro-image {
-    display: none;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 2%;
+    z-index: -1;
   }
+  .intro {
+    width: 70%;
+  }
+  
 }
 
-@media only screen and (max-width: 550px) {
+
+@media only screen and (max-width: 850px) {
+  .intro-image {
+    margin-left: 30%; 
+  }
+
+}
+
+@media only screen and (max-width: 746px) {
+  .intro {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
   .nav-links {
     background-position-x: 10px;
   }
