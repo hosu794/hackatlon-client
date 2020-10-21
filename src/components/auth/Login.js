@@ -17,8 +17,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
       }
 
     return (
-        <div>
-            <h1>Login</h1><Formik
+        <div className="sekcja-login">
+          <div className="login-box">
+            <h1 className="logowanie-napis">Logowanie</h1><Formik
         className="hero-body"
         initialValues={{
           password: "",
@@ -33,11 +34,11 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
         }}
         render={({ errors, status, touched }) => (
           <Form>
-            <h1 className="title">Log in</h1>
-
+            <div className="form-group-contener">
             <div className="form-group">
-              <label htmlFor="username">Username</label>
+              <label className="login-napisy" htmlFor="username"></label>
               <Field
+                placeholder="Nazwa użytkownika"
                 name="username"
                 type="text"
                 className={
@@ -51,10 +52,12 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
                 className="help is-danger"
               />
             </div>
+            </div>
 
             <div className="form-group">
-              <label htmlFor="password">Password</label>
+              <label className="login-napisy" htmlFor="password"></label>
               <Field
+                placeholder="Hasło"
                 name="password"
                 type="password"
                 className={
@@ -80,12 +83,13 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
                   margin: "2rem 0 2rem 0",
                 }}
               >
-                Submit
+                Zaloguj się
               </button>
             </div>
           </Form>
         )}
       />
+      </div>
         </div>
     )
 }

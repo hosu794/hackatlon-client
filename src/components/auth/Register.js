@@ -46,16 +46,13 @@ import * as Yup from "yup";
       }
 
     return (
-        <main> 
-                <div className="App">
-                    <div className="box">
-                        <div className="obrazek">
-                        <img id="cien" src={pilkarz} alt=""></img>
-                        </div>
-                        <h1 id="start">DOŁĄCZ DO NAS</h1>
-                        <h2 id="konto">Posiadasz już konto?</h2>
-                        <h2 id="zaloguj">Zaloguj się</h2>
-                     
+        <main className="Rejestracja"> 
+          <div className="App">
+          <div className="kontencior">
+            <div className="obrazek">
+              <img id="cien" src={pilkarz} alt=""></img>
+            </div>
+            
                         <Formik
         className="hero-body"
         initialValues={{
@@ -101,11 +98,16 @@ import * as Yup from "yup";
           touched,
           errors }) => (
           <Form className="res">
+            <div className="napisy-rejestracja">
+              <h1 id="start">DOŁĄCZ DO NAS</h1>
+              <h2 id="konto">Posiadasz już konto?</h2>
+              <h2 id="zaloguj">Zaloguj się</h2>
+            </div>
           
                              <Field
                               name="username"
                               type="text"
-                              placeholder="Nazwa Użytkownika"
+                              placeholder="Nazwa użytkownika"
                               className={
                                 "input" +
                                 (errors.username && touched.username ? " is-danger" : "")
@@ -119,7 +121,7 @@ import * as Yup from "yup";
                              <Field
                               name="name"
                               type="text"
-                              placeholder="Imie i Nazwisko"
+                              placeholder="Imię i nazwisko"
                               className={
                                 "input" +
                                 (errors.name && touched.name ? " is-danger" : "")
@@ -133,7 +135,7 @@ import * as Yup from "yup";
                               <Field
                               name="email"
                               type="text"
-                              placeholder="Adres Email"
+                              placeholder="Adres email"
                               className={
                                 "input" +
                                 (errors.email && touched.email ? " is-danger" : "")
@@ -182,7 +184,7 @@ import * as Yup from "yup";
           </Form>
         )}
       />
-                    </div>
+                  </div>
                 </div>
             </main>
     )

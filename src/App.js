@@ -1,5 +1,6 @@
 import React, {useEffect} from "react";
 import "./App.css";
+import "./styles/logowanie.css"
 import {useDispatch, useSelector} from 'react-redux'
 import Header from "./components/layout/Header"
 import About from "./components/layout/About"
