@@ -7,7 +7,7 @@ const PathItem = ({title, id}) => {
 
     return (
         <div className="K1">
-        <h1 >{title}</h1>
+       <h1 id="tytul-kategoria" >{title}</h1>
         {user ? <PathRedirectButton id={id} /> : null}
     </div>
     )
