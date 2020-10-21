@@ -120,7 +120,7 @@ nav {
 }
 
 .sekcja-1 {
-  height: 75vh;
+  min-height: 75vh;
   width: 90%;
   margin: auto;
   display: flex;
@@ -157,33 +157,55 @@ nav {
   border: solid 1px #2e45ce;
   border-radius: 7%;
   text-align: center;
-  width: 20vh;
+  width: 30vh;
   padding: 20px;
   margin-top: 5vh;
+  margin-bottom: 20px;
   background-color: #2e45ce;
 }
 .rejestracja a {
   text-decoration: none;
   color: #ffffff;
 }
+#paragraf1,#paragraf2 {
+    width: 80%;
+  }
 .sekcja-2 {
   background-color: #eeeeee;
-  min-height: 85vh;
+  min-height: 80vh;
 }
 
 .Kategorie {
   display: flex;
-  flex-wrap: wrap;
   padding: 25px;
   justify-content: center;
 }
+#kategorie-napis {
+  color: #1F1F1F;
+  font-size: 35px;
+  padding-top: 3%;
+}
+.kategorie-napis-div {
+  width: 20%;
+  margin-left: 5%;
+}
 
 .K1 {
-  height: 300px;
-  width: 300px;
-  border: solid 5px #1b1e2f;
-  border-radius: 15%;
-  margin: 20px;
+  height: 600px;
+  width: 400px;
+  border: solid 5px #1F1F1F;
+  background-color: #1F1F1F;
+  border-radius: 2%;
+  margin: 10px;
+  margin-right: 70px;
+}
+.K2 {
+  height: 600px;
+  width: 400px;
+  border: solid 5px #2e45ce;
+  background-color: #2e45ce;
+  border-radius: 2%;
+  margin: 10px;
   margin-right: 50px;
 }
 .break {
@@ -196,6 +218,8 @@ footer {
   text-align: center;
   padding: 10vh 0;
 }
+
+
 
 @media only screen and (max-width: 1060px) {
   body {
@@ -231,7 +255,7 @@ footer {
     opacity: 100;
   }
   .nav-link {
-    padding: 9vh 50vh;
+    padding: 9vh 47vh;
   }
   .nav-link:hover {
     background-color: #2e45ce;
@@ -247,14 +271,13 @@ footer {
 @media only screen and (max-width: 1210px) {
   .intro-image {
     width: 90%;
+    z-index: -1;
   }
   .intro {
-    width: 99%;
-    margin: auto;
+    width: 100%;
   }
-
   .rejestracja {
-    width: 40%;
+    width: 50%;
   }
   #paragraf2 {
     margin-bottom: 80px;
@@ -265,13 +288,35 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1274px) {
   .intro-image {
-    display: none;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 2%;
+    z-index: -1;
   }
+  .intro {
+    width: 70%;
+  }
+  
 }
 
-@media only screen and (max-width: 550px) {
+
+@media only screen and (max-width: 850px) {
+  .intro-image {
+    margin-left: 30%; 
+  }
+
+}
+
+@media only screen and (max-width: 746px) {
+  .intro {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
   .nav-links {
     background-position-x: 10px;
   }
@@ -279,130 +324,76 @@ footer {
     width: 45%;
   }
 }
-/*obrazek*/
-.obrazek {
-  height: 85vh;
-  width: 80%;
-  margin: auto;
+
+/*----------------------------------------------------------------------------------
+----------------------------------------REJESTRACJA--------------------------------*/
+
+.kontencior {
+  margin-top: 20px;
   display: flex;
-  margin-top: 1%;
+  margin-top: 5px;
 }
-#cien {
-  margin-left: 15%;
+.obrazek {
+  margin: auto;
   filter: drop-shadow(4px 4px 0.6px #8ddca4);
 }
-/*dolacz do nas*/
 #start {
-  color: white;
-  position: absolute;
-  top: 20%;
-  left: 78%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  font-display: flex;
+  margin: 20px 0;
   font-size: 35px;
 }
-/*masz juz konto*/
-#konto {
-  color: white;
-  position: absolute;
-  top: 27%;
-  left: 76%;
-  transform: translate(-50%, -20%);
-  text-align: left;
-  font-family: "Mina", sans-serif;
+.napisy-rejestracja h2{
+  font-size: 15px;
+  display: inline-block;
+  margin: 5px;
 }
-/*odnoscnik zaloguj*/
 #zaloguj {
-  color: white;
-  position: absolute;
-  top: 27.5%;
-  left: 87%;
-  transform: translate(-50%, -20%);
-  text-align: left;
-  font-family: "Mina", sans-serif;
-  font-size: 19px;
-}
-#zaloguj:hover {
-  color: #3066be;
+  color: #2e45ce;
 }
 
-/*checkbox*/
-.checkbox {
-  color: white;
-  font-size: 12px;
-  bottom: 5px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-/*miejsca na tekst*/
 .res {
-  color: white;
-  position: absolute;
-  top: 55%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
-/*pole miejsca na tekst(wyglad w srodku)*/
-.res input {
-  width: 80%;
-  padding: 10px 0;
-  margin: 5px 0;
-  border-left: 0;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 2px solid #3066be;
-  outline: none;
-  background: transparent;
-  color: #ffffff;
-  font-family: "Mina", sans-serif;
-  font-size: 18px;
-}
-.res input:focus {
-  border-bottom: 2px solid #8ddca4;
+    color: white;
+    margin: auto;
+    width: 500px;
+    height: 100%;
+    max-width: 90%;
+    padding: 20px;
+    background: transparent;
+    box-shadow: 10px 10px 8px 10px rgba(0,0,0,.3);
 }
 
-/*przycisk stworz konto*/
-.res button {
+.checkbox {
   display: flex;
-  justify-content: flex-end;
-  font-size: 20px;
-  letter-spacing: 2px;
-  color: #ffffff;
-  padding: 10px 15px;
-  border: solid 3px #8ddca4;
-  border-radius: 7%;
-  position: relative;
-  z-index: 1;
-  background-color: transparent;
+  margin: 20px;
 }
 
-.res button:hover {
-  color: #ffffff;
-  cursor: pointer;
+.checkbox h4 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
 }
 
-.res button:before {
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: "";
-  background-color: #8ddca4;
+.App button {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    color: #1b1e2f;
+    border: 2px solid #8ddca4;
+    background: #1b1e2f;
+    border-radius: 5px;   
+    outline: none; 
+    color: white;
 }
 
-.res button:hover:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  z-index: -1;
+.App button:hover {
+    cursor: pointer;
+    background-color: #8ddca4;
+    transition: 0.5s all ease;
+}
+.App button::before {
+
+    background-color: #8ddca4;
 }
 
 .is-danger {
@@ -412,3 +403,9 @@ footer {
 .is-white {
   color: #fff;
 }
+
+@media only screen and (max-width: 1040px) {
+  .obrazek {
+    display: none;
+  }
+  }
