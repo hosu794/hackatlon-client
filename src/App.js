@@ -8,6 +8,7 @@ import Footer from "./components/layout/Footer"
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 import UserProfile from './components/user/UserProfile'
+import Tasks from './components/task/Tasks'
 
 import {
   BrowserRouter as Router,
@@ -20,7 +21,6 @@ import {PrivateRoute} from './routes'
 import { alertActions, userActions } from "./actions";
 import { history } from "./utils";
 import Home from "./components/layout/Home";
-import PathTasks from "./components/pathitem/PathTasks";
 
 function App() {
 
@@ -44,8 +44,8 @@ function App() {
       <Route path="/" component={Home} exact />
       <Route path="/login" component={Login} exact />
       <Route path="/register" component={Register} exact />
-      <PrivateRoute path="/path/:id" component={PathTasks} />
       <PrivateRoute path="/profile" component={UserProfile} />
+      <PrivateRoute path="/task/path/:id" component={Tasks} exact />
       </Switch>
       <Footer />
       </Router>

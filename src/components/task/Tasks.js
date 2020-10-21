@@ -1,11 +1,10 @@
 import React from 'react'
 
- function PathTasks() {
+function Tasks() {
     return (
         <div>
-            Tasks
+            <h1>Tasks</h1>
         </div>
     )
 }
-
-export default PathTasks;
+export default Tasks;
