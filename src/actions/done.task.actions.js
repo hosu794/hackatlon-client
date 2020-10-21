@@ -50,7 +50,6 @@ function getCurrentLevel(service = doneTaskService.getCurrentLevel) {
         return service().then(
             (response) => {
                 dispatch(success(response.data));
-
             },
             (error) => {
                 handleResponse(error);
@@ -113,7 +112,7 @@ function deleteDoneTask(doneTaskId, service = doneTaskService.deleteDoneTask) {
         return service(doneTaskId).then(
             (response) => {
                 dispatch(success(response.data));
-                dispatch(alertActions.success("Done task added successfully"));
+                dispatch(alertActions.success("Delete successfully"));
             },
             (error) => {
                 handleResponse(error);

@@ -1,9 +1,14 @@
 import { donetaskConstants } from '../constants'
 
-export function donetask(state = {}, action) {
+export function donetask(state = { content: [] }, action) {
     switch (action.type) {
         case donetaskConstants.CREATE_DONE_TASK_REQUEST:
         case donetaskConstants.DELETE_DONE_TASK_REQUEST:
+            return {
+                ...state,
+                loading: false,
+                content: state.content.filter((val) => val.id !== action.index),
+            }
         case donetaskConstants.GET_CURRENT_LEVEL_REQUEST:
         case donetaskConstants.GET_DONETASKS_BY_CREATED_BY_REQUEST:
             return {
@@ -14,13 +19,12 @@ export function donetask(state = {}, action) {
             return {
                 ...state,
                 loading: false,
-                content: state.content.filter((val) => val.id !== action.index),
             }
         case donetaskConstants.GET_DONETASKS_BY_CREATED_BY_SUCCESS:
             return {
                 ...state,
                 loading: false,
-                content: state.content.concat(action.data)
+                content: state.content.concat(action.data.content)
             }
         case donetaskConstants.GET_CURRENT_LEVEL_SUCCESS:
             return {

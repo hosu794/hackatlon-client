@@ -6,6 +6,8 @@ import {doneTaskActions} from '../../actions'
  function TaskDoneButton({id}) {
     const dispatch = useDispatch();
 
+
+
     function createDoneTask() {
         alert("Check task: " + id);
         const newTaskDone = {
