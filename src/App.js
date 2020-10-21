@@ -6,6 +6,7 @@ import About from "./components/layout/About"
 import Footer from "./components/layout/Footer"
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
+import UserProfile from './components/user/UserProfile'
 
 import {
   BrowserRouter as Router,
@@ -43,7 +44,7 @@ function App() {
       <Route path="/login" component={Login} exact />
       <Route path="/register" component={Register} exact />
       <PrivateRoute path="/path/:id" component={PathTasks} />
-    
+      <PrivateRoute path="/profile" component={UserProfile} />
       </Switch>
       <Footer />
       </Router>
