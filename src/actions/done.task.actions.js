@@ -50,6 +50,7 @@ function getCurrentLevel(service = doneTaskService.getCurrentLevel) {
         return service().then(
             (response) => {
                 dispatch(success(response.data));
+
             },
             (error) => {
                 handleResponse(error);
@@ -80,6 +81,7 @@ function createDoneTask(doneTaskRequest, service = doneTaskService.createDoneTas
         return service(doneTaskRequest).then(
             (response) => {
                 dispatch(success(response.data));
+
                 dispatch(alertActions.success("Done task added successfully"));
             },
             (error) => {

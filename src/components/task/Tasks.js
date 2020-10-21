@@ -11,7 +11,7 @@ function Tasks(props) {
 
     useEffect(() => {
         dispatch(taskActions.getTasksTodoByPath(props.match.params.id));
-    }, [])
+    }, [content])
 
     return (
         <div> 
