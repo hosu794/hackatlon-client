@@ -94,7 +94,7 @@ function getTasksTodoByPath(pathId, service = taskService.getTasksTodoByPath) {
     }
 
     function success(data) {
-        return { type: taskConstants.GET_TASKS_BY_PATH_SUCCESS, data }
+        return { type: taskConstants.GET_TASKS_TODO_BY_PATH_SUCCESS, data }
     }
 
     function failure(error) {

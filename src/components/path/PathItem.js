@@ -5,8 +5,6 @@ const PathItem = ({title, id}) => {
 
     const user = useSelector(state => state.user.user);
 
-
-
     return (
         <div className="K1">
         <h1 >{title}</h1>

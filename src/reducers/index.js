@@ -5,6 +5,7 @@ import { user } from './user.reducer'
 import { registration } from './registration.reducer'
 import { path } from './path.reducer'
 import { task } from './task.reducer'
+import { donetask } from './done.task.reducer'
 
 const rootReducer = combineReducers({
     alert,
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
     user,
     registration,
     path,
-    task
+    task,
+    donetask
 });
 
 export default rootReducer;

@@ -12,6 +12,7 @@ export function task(state = {}, action) {
         case taskConstants.GET_ALL_TASKS_SUCCESS:
         case taskConstants.GET_TASKS_BY_PATH_SUCCESS:
         case taskConstants.GET_TASKS_TODO_BY_PATH_SUCCESS:
+            console.log(action.data.content)
             return {
                 ...state,
                 loading: false,

@@ -1,13 +1,13 @@
-import {authHeader } from '../utils'
+import { authHeader } from '../utils'
 
-import {apiConstants} from '../constants'
+import { apiConstants } from '../constants'
 
 import axios from 'axios'
 
 export const doneTaskService = {
-    getDoneTasksByCreatedBy, 
-    getCurrentLevel, 
-    createDoneTask, 
+    getDoneTasksByCreatedBy,
+    getCurrentLevel,
+    createDoneTask,
     deleteDoneTask
 }
 
@@ -20,22 +20,21 @@ function getDoneTasksByCreatedBy() {
 
 
 function getCurrentLevel() {
-  return axios.get(`${apiConstants.API_URL}/api/done/task/level`, {
-      headers: authHeader()
-  });
+    return axios.get(`${apiConstants.API_URL}/api/done/task/level`, {
+        headers: authHeader()
+    });
 }
 
 function createDoneTask(request) {
 
-   const body = JSON.stringify(request);
+    const body = JSON.stringify(request);
 
-   return axios.post(
-    `${apiConstants.API_URL}/api/done/task`,
-    body,
-    {
-      headers: authHeader(),
-    }
-  );
+    return axios.post(
+        `${apiConstants.API_URL}/api/done/task`,
+        body, {
+            headers: authHeader(),
+        }
+    );
 
 }
 

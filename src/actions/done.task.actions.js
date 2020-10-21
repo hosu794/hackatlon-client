@@ -1,7 +1,7 @@
 import { donetaskConstants } from '../constants'
 import { handleResponse, history } from '../utils'
 
-import { donetaskConstants, doneTaskService } from '../services'
+import { doneTaskService } from '../services'
 import { alertActions } from './'
 import { createDispatchHook } from 'react-redux'
 export const doneTaskActions = {
@@ -108,7 +108,7 @@ function deleteDoneTask(doneTaskId, service = doneTaskService.deleteDoneTask) {
     return (dispatch) => {
         dispatch(request());
 
-        return service(doneTaskRequest).then(
+        return service(doneTaskId).then(
             (response) => {
                 dispatch(success(response.data));
                 dispatch(alertActions.success("Done task added successfully"));
