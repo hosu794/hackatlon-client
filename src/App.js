@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
 import "./App.css";
+import "./styles/logowanie.css"
 import {useDispatch, useSelector} from 'react-redux'
 import Header from "./components/layout/Header"
 import About from "./components/layout/About"
-import Kategorie from "./components/layout/Kategorie"
 import Footer from "./components/layout/Footer"
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
@@ -19,6 +19,7 @@ import {PrivateRoute} from './routes'
 import { alertActions, userActions } from "./actions";
 import { history } from "./utils";
 import Home from "./components/layout/Home";
+import PathTasks from "./components/pathitem/PathTasks";
 
 function App() {
 
@@ -42,6 +43,8 @@ function App() {
       <Route path="/" component={Home} exact />
       <Route path="/login" component={Login} exact />
       <Route path="/register" component={Register} exact />
+      <PrivateRoute path="/path/:id" component={PathTasks} />
+    
       </Switch>
       <Footer />
       </Router>

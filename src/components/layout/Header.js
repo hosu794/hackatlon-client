@@ -1,10 +1,22 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+
+import {Link} from 'react-router-dom'
+
+import {useSelector, useDispatch} from 'react-redux'
+import LoginButton from '../auth/LoginButton';
+import LoggedButton from '../auth/LoggedButton';
 
 function Header() {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
 
+    const loggedIn = useSelector((state) => state.authentication.loggedIn);
+    const user = useSelector((state) => state.authentication.user);
+
+
     const [active, setActive] = useState(false);
+
+   
     
     function toggleNavbar() {
         setActive(!active);
@@ -12,16 +24,19 @@ function Header() {
     return (
         <header>
         <div className="logo-napis">
-            <a href="index.html">
+            <a>
+                <Link to="/">
                 <h1>HABITER</h1>
+                </Link>
+               
             </a>
         </div>
         <nav className="navbar">
             <div className={active ? "nav-links nav-active" : "nav-links"}>
                     <li className="zalogujburger"><a className="nav-link" href="#">Zaloguj</a></li>
-                    <li><a className="nav-link" href="ranking.html">Ranking</a></li>
-                    <li><a className="nav-link" href="FAQ.html">FAQ</a></li>
-                    <li><a className="nav-link" href="Profil.html">Profil</a></li>
+                    <li><a className="nav-link"><Link className="is-white" to="/rank">Ranking</Link></a></li>
+                    <li><a className="nav-link"><Link className="is-white" to="/faq">FAQ</Link></a></li>
+                    <li><a className="nav-link"><Link className="is-white" to="/profile">Profil</Link></a></li>
             </div>
                 <div  className="burger" onClick={toggleNavbar}>
                     <div className="line1"></div>
@@ -29,9 +44,7 @@ function Header() {
                     <div className="line3"></div>
                 </div>
         </nav>
-        <a className="logowanie-przycisk" href="">
-            <h5>Zaloguj się</h5>
-        </a>
+        {loggedIn ? <LoggedButton /> : <LoginButton />}
     </header>
     );
 }

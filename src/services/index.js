@@ -1,2 +1,5 @@
 export * from './authentication.service'
 export * from './user.service'
+export * from './donetask.service'
+export * from './path.service'
+export * from './task.service'
