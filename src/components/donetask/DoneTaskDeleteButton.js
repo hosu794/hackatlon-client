@@ -11,7 +11,7 @@ import {doneTaskActions} from '../../actions'
     }
 
     return (
-       <button onClick={deleteDoneTask}>Delete Task</button>
+       <button onClick={deleteDoneTask}>Usuń zadanie</button>
     )
 }
 

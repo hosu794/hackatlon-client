@@ -18,7 +18,7 @@ function Tasks(props) {
             <h1>Zadania</h1>
             {content ? content.map(item => (
                <TaskItem  key={item.id} title={item.title} id={item.id} />
-            )) : "Loading..."}
+            )) : "Brak dostępnych zadań dla kategorii"}
         </div>
     )
 }

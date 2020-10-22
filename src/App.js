@@ -9,6 +9,7 @@ import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 import UserProfile from './components/user/UserProfile'
 import Tasks from './components/task/Tasks'
+import Faq from './components/faq/Faq'
 
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ import {PrivateRoute} from './routes'
 import { alertActions, userActions } from "./actions";
 import { history } from "./utils";
 import Home from "./components/layout/Home";
+import Rank from "./components/rank/Rank";
 
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
       <Route path="/" component={Home} exact />
       <Route path="/login" component={Login} exact />
       <Route path="/register" component={Register} exact />
+      <Route path="/rank" component={Rank} exact />
+      <Route path="/faq" component={Faq} exact />
       <PrivateRoute path="/profile" component={UserProfile} />
       <PrivateRoute path="/task/path/:id" component={Tasks} exact />
       </Switch>
