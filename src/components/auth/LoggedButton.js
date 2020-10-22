@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 import {useDispatch} from 'react-redux'
 import { authActions } from '../../actions';
+import PropTypes from 'prop-types'
 
  function LoggedButton() {
 
@@ -22,6 +23,10 @@ import { authActions } from '../../actions';
         </a>
         </div>
     )
+}
+
+LoggedButton.propTypes = {
+    authActions: PropTypes.object.isRequired
 }
 
 

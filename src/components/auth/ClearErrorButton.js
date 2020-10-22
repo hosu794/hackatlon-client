@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
  function ClearErrorButton({children}) {
     return (
@@ -8,6 +9,10 @@ import React from 'react'
             </button>
         </div>
     )
+}
+
+ClearErrorButton.propTypes = {
+    children: PropTypes.string.isRequired
 }
 
 

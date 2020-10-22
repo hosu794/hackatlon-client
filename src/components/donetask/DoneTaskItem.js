@@ -1,5 +1,6 @@
 import React from 'react'
 import DoneTaskDeleteButton from './DoneTaskDeleteButton'
+import PropTypes from 'prop-types'
 
  function DoneTaskItem({path, title, id}) {
     return (
@@ -11,5 +12,10 @@ import DoneTaskDeleteButton from './DoneTaskDeleteButton'
     )
 }
 
+DoneTaskItem.propTypes = {
+    path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired, 
+    id: PropTypes.number.isRequired
+}
 
 export default DoneTaskItem;

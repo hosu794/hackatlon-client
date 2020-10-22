@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import CurrentLevel from './CurrentLevel'
 import DoneTasks from '../donetask/DoneTasks'
+import PropTypes from 'prop-types'
 
 function UserCredentials({username, name}) {
-
-    useEffect(() => {
-        console.log(username, name)
-    }, [])
 
     return(
         <div>
@@ -16,6 +13,11 @@ function UserCredentials({username, name}) {
             <DoneTasks />
         </div>
     )
+}
+
+UserCredentials.propTypes = {
+    username: PropTypes.string.isRequired, 
+    name: PropTypes.string.isRequired
 }
 
 export default UserCredentials;

@@ -2,6 +2,8 @@ import React, {useEffect} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import {doneTaskActions} from '../../actions'
 import DoneTaskItem from './DoneTaskItem';
+import PropTypes from 'prop-types'
+import { object } from 'yup';
 
 function DoneTasks() {
 
@@ -22,5 +24,9 @@ function DoneTasks() {
     )
 }
 
+DoneTasks.propTypes = {
+    content: PropTypes.arrayOf(PropTypes.object),
+    doneTaskActions: PropTypes.object
+}
 
 export default DoneTasks;
