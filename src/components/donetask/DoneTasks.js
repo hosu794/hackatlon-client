@@ -10,7 +10,7 @@ function DoneTasks() {
 
     useEffect(() => {
         dispatch(doneTaskActions.getDoneTasksByCreatedBy());
-    }, [content])
+    }, [])
 
     return (
         <div>

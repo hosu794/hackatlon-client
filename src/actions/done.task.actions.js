@@ -113,6 +113,7 @@ function deleteDoneTask(doneTaskId, service = doneTaskService.deleteDoneTask) {
             (response) => {
                 dispatch(success(response.data));
                 dispatch(alertActions.success("Delete successfully"));
+                window.location.reload(false);
             },
             (error) => {
                 handleResponse(error);

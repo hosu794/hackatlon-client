@@ -9,7 +9,6 @@ import {doneTaskActions} from '../../actions'
 
 
     function createDoneTask() {
-        alert("Check task: " + id);
         const newTaskDone = {
             taskId: id
         }
