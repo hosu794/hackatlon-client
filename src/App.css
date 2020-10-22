@@ -198,6 +198,15 @@ nav {
 .Kategorie {
     display: flex;
 }
+#kategorie-napis {
+  color: #1F1F1F;
+  font-size: 35px;
+  padding-top: 3%;
+}
+.kategorie-napis-div {
+  width: 20%;
+  margin-left: 5%;
+}
 
 .break {
     flex-basis: 100%;
