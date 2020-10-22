@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import {pathActions} from '../../actions'
 import {useDispatch, useSelector} from 'react-redux'
 import PathItem from './PathItem';
+import PropTypes from 'prop-types'
 
 const Paths = () => {
     const dispatch = useDispatch();
@@ -22,6 +23,11 @@ const Paths = () => {
             </div>
         </section>
     )
+}
+
+Paths.propTypes = {
+    content: PropTypes.arrayOf(PropTypes.object),
+    pathActions: PropTypes.object
 }
 
 export default Paths;

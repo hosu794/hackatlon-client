@@ -1,6 +1,7 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
 import UserCredentials from './UserCredentials'
+import PropTypes from 'prop-types'
 
  function UserProfile() {
 
@@ -14,6 +15,10 @@ import UserCredentials from './UserCredentials'
             {user ? <UserCredentials username={user.username} name={user.name} /> : 'Loading...'}
         </div>
     )
+}
+
+UserProfile.propTypes = {
+    user: PropTypes.object
 }
 
 export default UserProfile;

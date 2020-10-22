@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'
 
 function PathRedirectButton({ id }) {
 
@@ -11,6 +12,10 @@ function PathRedirectButton({ id }) {
      </div>
    )
 
+}
+
+PathRedirectButton.propTypes = {
+  id: PropTypes.number.isRequired
 }
 
 export default PathRedirectButton;

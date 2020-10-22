@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import LoginButton from '../auth/LoginButton';
 import LoggedButton from '../auth/LoggedButton';
+import PropTypes from 'prop-types';
 
 function Header() {
     const burger = document.querySelector('.burger');
@@ -46,6 +47,11 @@ function Header() {
         {loggedIn ? <LoggedButton /> : <LoginButton />}
     </header>
     );
+}
+
+Header.propTypes = {
+    loggedIn: PropTypes.bool,
+    user: PropTypes.object
 }
 
 export default Header

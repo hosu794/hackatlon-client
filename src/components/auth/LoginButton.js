@@ -1,18 +1,13 @@
-import React, {useEffect} from 'react'
-import {useDispatch, useSelector} from 'react-redux'
-import {Link} from 'react-router-dom'
-import {authActions} from '../../actions'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
- function LoginButton() {
 
-   
-
-    return (
+function LoginButton() {
+    return ( 
         <div>
-            <a  className="logowanie-przycisk">
-         <Link to="/login"><h5 className="is-white">Zaloguj się</h5></Link>
-        </a>
-        </div>
+        <a className = "logowanie-przycisk" >
+        <Link to = "/login"> <h5 className="is-white">Zaloguj się</h5></Link>
+        </a> </div>
     )
 }
 

@@ -190,5 +190,13 @@ import * as Yup from "yup";
     )
 }
 
+Register.propTypes = {
+auth: PropTypes.object, 
+isUsernameAvailable: PropTypes.bool, 
+isEmailAvailable: PropTypes.bool,
+registering: PropTypes.bool,
+isAvailable: PropTypes.bool
+}
+
 
 export default Register;

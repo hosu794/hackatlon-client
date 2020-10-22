@@ -1,5 +1,6 @@
 import React from 'react'
 import ClearErrorButton from './ClearErrorButton';
+import PropTypes from 'prop-types'
 
 import {useDispatch, useSelector} from 'react-redux'
 import * as Yup from "yup";
@@ -93,6 +94,13 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
       </div>
         </div>
     )
+}
+
+Login.propTypes = {
+  loading: PropTypes.bool,
+  auth: PropTypes.object,
+  authActions: PropTypes.object,
+  alertActions: PropTypes.object
 }
 
 export default Login;

@@ -1,6 +1,7 @@
 import React from 'react'
 import {useDispatch} from 'react-redux'
 import {doneTaskActions} from '../../actions'
+import PropTypes from 'prop-types'
 
  function DoneTaskDeleteButton({id}) {
 
@@ -13,6 +14,10 @@ import {doneTaskActions} from '../../actions'
     return (
        <button onClick={deleteDoneTask}>Usuń zadanie</button>
     )
+}
+
+DoneTaskDeleteButton.propTypes = {
+    id: PropTypes.number.isRequired
 }
 
 export default DoneTaskDeleteButton;

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import {taskActions} from '../../actions'
 import {useDispatch, useSelector} from 'react-redux'
 import TaskItem from './TaskItem';
+import PropTypes from 'prop-types'
 
 function Tasks(props) {
 
@@ -22,4 +23,9 @@ function Tasks(props) {
         </div>
     )
 }
+
+Tasks.propTypes = {
+    content: PropTypes.arrayOf(PropTypes.object)
+}
+
 export default Tasks;

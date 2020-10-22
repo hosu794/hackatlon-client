@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {doneTaskActions} from '../../actions'
 import {useSelector, useDispatch} from 'react-redux'
+import PropTypes from 'prop-types'
 
  function CurrentLevel() {
 
@@ -16,6 +17,11 @@ import {useSelector, useDispatch} from 'react-redux'
            Obecny poziom:  {level ? level.level : "Loading..."}
         </div>
     )
+}
+
+CurrentLevel.propTypes = {
+  level: PropTypes.number,
+  doneTaskActions: PropTypes.object
 }
 
 export default CurrentLevel;
