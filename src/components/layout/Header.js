@@ -33,8 +33,7 @@ function Header() {
         </div>
         <nav className="navbar">
             <div className={active ? "nav-links nav-active" : "nav-links"}>
-                    <li className="zalogujburger"><a className="nav-link" href="#">Zaloguj</a></li>
-                    <li><a className="nav-link"><Link className="is-white" to="/rank">Ranking</Link></a></li>
+                    <li className="zalogujburger"><a className="nav-link"><Link className="is-white" to="/login">Zaloguj</Link></a></li>
                     <li><a className="nav-link"><Link className="is-white" to="/faq">FAQ</Link></a></li>
                     <li><a className="nav-link"><Link className="is-white" to="/profile">Profil</Link></a></li>
             </div>
