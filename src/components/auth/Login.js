@@ -1,4 +1,5 @@
 import React from 'react'
+import ClearErrorButton from './ClearErrorButton';
 
 import {useDispatch, useSelector} from 'react-redux'
 import * as Yup from "yup";
@@ -11,6 +12,10 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
     const dispatch = useDispatch();
     const loading = useSelector((state) => state.authentication.loading);
     const auth = useSelector((state) => state.authentication)
+
+    function clearAlert() {
+      dispatch(authActions.clearError());
+    }
 
     function login(usernameOrEmail, password) {
         dispatch(authActions.login({ usernameOrEmail, password }));
@@ -85,6 +90,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
               >
                 Zaloguj się
               </button>
+              {auth.error ? (
+                <ClearErrorButton>{auth.error}</ClearErrorButton>
+              ) : null}
             </div>
           </Form>
         )}
