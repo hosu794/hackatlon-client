@@ -1,324 +1,342 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
 body {
-  background-color: #1b1e2f;
-  font-family: "Mina", sans-serif;
-  color: #ffffff;
+    background-color: #1b1e2f;
+    font-family: "Mina", sans-serif;
+    color: #ffffff;
 }
+
+
 /* NAGŁÓWEK */
+
 header {
-  display: flex;
-  align-items: center;
-  height: 10vh;
-  width: 90%;
-  margin: auto;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 90%;
+    margin: auto;
 }
+
 
 /* LOGO */
+
 .logo-napis h1 {
-  color: #ffffff;
-  font-family: "Orbitron", sans-serif;
-  font-size: 30px;
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
 }
 
+
 /* NAWIGACJA */
+
 nav {
-  flex: 1;
+    flex: 1;
 }
 
 .nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-  margin-left: 35%;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 35%;
 }
 
 .nav-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 20px;
-  padding: 10px 20px;
-  margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: auto;
 }
 
 .zalogujburger {
-  display: none;
+    display: none;
 }
 
 .nav-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #8ddca4;
-  transition: width 0.3s;
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8ddca4;
+    transition: width 0.3s;
 }
 
 .nav-link:hover::after {
-  width: 100%;
-  transition: width 0.3s;
+    width: 100%;
+    transition: width 0.3s;
 }
 
+
 /* PRZYCISK LOGOWANIA */
+
 .logowanie-przycisk {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 20px;
-  letter-spacing: 2px;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: solid 3px #2e45ce;
-  border-radius: 7%;
-  position: relative;
-  z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: solid 3px #2e45ce;
+    border-radius: 7%;
+    position: relative;
+    z-index: 1;
 }
 
 .logowanie-przycisk:hover {
-  color: #ffffff;
-  cursor: pointer;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .logowanie-przycisk:before {
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: "";
-  background-color: #2e45ce;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #2e45ce;
 }
 
 .logowanie-przycisk:hover:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  z-index: -1;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
+
 /* BURGER */
+
 .burger {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 .burger div {
-  width: 25px;
-  height: 5px;
-  background-color: #ffffff;
-  margin: 5px;
-  margin-left: 80%;
-  display: none;
+    width: 25px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 5px;
+    margin-left: 80%;
+    display: none;
 }
 
 .sekcja-1 {
-  min-height: 75vh;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  margin-top: 5%;
+    min-height: 75vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
 }
 
 .intro-image {
-  margin-left: 15%;
-  filter: drop-shadow(4px 4px 0.6px #8ddca4);
+    margin-left: 15%;
+    filter: drop-shadow(4px 4px 0.6px #8ddca4);
 }
 
 .presentation {
-  display: flex;
+    display: flex;
 }
 
 .intro {
-  width: 50%;
-  margin-top: 6%;
+    width: 50%;
+    margin-top: 6%;
 }
+
 #onas {
-  color: #8ddca4;
+    color: #8ddca4;
 }
+
 #paragraf1 {
-  font-size: 40px;
-  font-weight: bolder;
-  padding: 2vh 0;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 2vh 0;
 }
+
 #paragraf2 {
-  font-size: 18px;
-  font-weight: lighter;
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 .rejestracja {
-  border: solid 1px #2e45ce;
-  border-radius: 7%;
-  text-align: center;
-  width: 30vh;
-  padding: 20px;
-  margin-top: 5vh;
-  margin-bottom: 20px;
-  background-color: #2e45ce;
+    border: solid 1px #2e45ce;
+    border-radius: 7%;
+    text-align: center;
+    width: 30vh;
+    padding: 20px;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    background-color: #2e45ce;
 }
+
 .rejestracja a {
-  text-decoration: none;
-  color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
-#paragraf1,#paragraf2 {
+
+#paragraf1,
+#paragraf2 {
     width: 80%;
-  }
+}
+
 .sekcja-2 {
-  background-color: #eeeeee;
-  min-height: 75vh;
+    background-color: #eeeeee;
+    min-height: 75vh;
 }
 
 .Kategorie {
-  display: flex;
+    display: flex;
 }
 
 .break {
-  flex-basis: 100%;
-  height: 0;
+    flex-basis: 100%;
+    height: 0;
 }
 
 footer {
-  height: 20vh;
-  text-align: center;
-  padding: 10vh 0;
+    height: 20vh;
+    text-align: center;
+    padding: 10vh 0;
 }
 
-
-
 @media only screen and (max-width: 1060px) {
-  body {
-    overflow-x: hidden;
-  }
-  .logowanie-przycisk {
-    display: none;
-  }
-  .burger div {
-    display: flex;
-  }
-
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 90vh;
-    top: 8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(150%);
-    transition: transform 0.5s ease-in;
-    margin-top: 20px;
-    z-index: 1;
-    background-image: url(./assets/siatkarz.png);
-    background-color: #1b1e2f;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: center;
-  }
-  .nav-links li {
-    opacity: 100;
-  }
-  .nav-link {
-    padding: 9vh 47vh;
-  }
-  .nav-link:hover {
-    background-color: #2e45ce;
-  }
-  .nav-active {
-    transform: translateX(0%);
-  }
-  .zalogujburger {
-    display: inline-block;
-  }
+    body {
+        overflow-x: hidden;
+    }
+    .logowanie-przycisk {
+        display: none;
+    }
+    .burger div {
+        display: flex;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(150%);
+        transition: transform 0.5s ease-in;
+        margin-top: 20px;
+        z-index: 1;
+        background-image: url(./assets/siatkarz.png);
+        background-color: #1b1e2f;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    .nav-links li {
+        opacity: 100;
+    }
+    .nav-link {
+        padding: 9vh 47vh;
+    }
+    .nav-link:hover {
+        background-color: #2e45ce;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+    .zalogujburger {
+        display: inline-block;
+    }
 }
 
 @media only screen and (max-width: 1210px) {
-  .intro-image {
-    width: 90%;
-    z-index: -1;
-  }
-  .intro {
-    width: 100%;
-  }
-  .rejestracja {
-    width: 50%;
-  }
-  #paragraf2 {
-    margin-bottom: 80px;
-    margin-top: 15px;
-  }
-  .sekcja-1 {
-    margin-top: 0%;
-  }
+    .intro-image {
+        width: 90%;
+        z-index: -1;
+    }
+    .intro {
+        width: 100%;
+    }
+    .rejestracja {
+        width: 50%;
+    }
+    #paragraf2 {
+        margin-bottom: 80px;
+        margin-top: 15px;
+    }
+    .sekcja-1 {
+        margin-top: 0%;
+    }
 }
 
 @media only screen and (max-width: 1274px) {
-  .intro-image {
-    position: absolute;
-    margin-left: 50%;
-    margin-top: 2%;
-    z-index: -1;
-  }
-  .intro {
-    width: 70%;
-  }
-  
+    .intro-image {
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 2%;
+        z-index: -1;
+    }
+    .intro {
+        width: 70%;
+    }
 }
 
-
 @media only screen and (max-width: 850px) {
-  .intro-image {
-    margin-left: 30%; 
-  }
-
+    .intro-image {
+        margin-left: 30%;
+    }
 }
 
 @media only screen and (max-width: 746px) {
-  .intro {
-    width: 100%;
-  }
-
+    .intro {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
-  .nav-links {
-    background-position-x: 10px;
-  }
-  .rejestracja {
-    width: 45%;
-  }
+    .nav-links {
+        background-position-x: 10px;
+    }
+    .rejestracja {
+        width: 45%;
+    }
 }
+
 
 /*----------------------------------------------------------------------------------
 ----------------------------------------REJESTRACJA--------------------------------*/
 
 .kontencior {
-  margin-top: 20px;
-  display: flex;
-  margin-top: 5px;
+    margin-top: 20px;
+    display: flex;
+    margin-top: 5px;
 }
+
 .obrazek {
-  margin: auto;
-  filter: drop-shadow(4px 4px 0.6px #8ddca4);
+    margin: auto;
+    filter: drop-shadow(4px 4px 0.6px #8ddca4);
 }
+
 #start {
-  margin: 20px 0;
-  font-size: 35px;
+    margin: 20px 0;
+    font-size: 35px;
 }
-.napisy-rejestracja h2{
-  font-size: 15px;
-  display: inline-block;
-  margin: 5px;
+
+.napisy-rejestracja h2 {
+    font-size: 15px;
+    display: inline-block;
+    margin: 5px;
 }
+
 #zaloguj {
-  color: #2e45ce;
+    color: #2e45ce;
 }
 
 .res {
@@ -329,18 +347,18 @@ footer {
     max-width: 90%;
     padding: 20px;
     background: transparent;
-    box-shadow: 10px 10px 8px 10px rgba(0,0,0,.3);
+    box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, .3);
 }
 
 .checkbox {
-  display: flex;
-  margin: 20px;
+    display: flex;
+    margin: 20px;
 }
 
 .checkbox h4 {
-  margin-left: 10px;
-  margin-bottom: 20px;
-  font-size: 13px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
 }
 
 .App button {
@@ -352,8 +370,8 @@ footer {
     color: #1b1e2f;
     border: 2px solid #8ddca4;
     background: #1b1e2f;
-    border-radius: 5px;   
-    outline: none; 
+    border-radius: 5px;
+    outline: none;
     color: white;
 }
 
@@ -362,49 +380,52 @@ footer {
     background-color: #8ddca4;
     transition: 0.5s all ease;
 }
-.App button::before {
 
+.App button::before {
     background-color: #8ddca4;
 }
 
 .is-danger {
-  color: rgb(216, 69, 69);
+    color: rgb(216, 69, 69);
 }
 
 .is-white {
-  color: #fff;
+    color: #fff;
 }
 
 @media only screen and (max-width: 1040px) {
-  .obrazek {
-    display: none;
-  }
-  }
-
-  /* ----------------------------------------KATEGORIE------------------------------------------------ */ 
-  .K1 {
-  height: 75vh;
-  width: 20%;
-  background-color: transparent;
+    .obrazek {
+        display: none;
+    }
 }
-  
-  .K1 h1 {
+
+
+/* ----------------------------------------KATEGORIE------------------------------------------------ */
+
+.K1 {
+    height: 75vh;
+    width: 20%;
+    background-color: transparent;
+}
+
+.K1 h1 {
     color: #1b1e2f;
     text-align: center;
     margin-top: 20px;
-  }
-  .K1:hover {
-  background-color: #E8E8E8;
+}
+
+.K1:hover {
+    background-color: #E8E8E8;
 }
 
 @media only screen and (max-width: 1400px) {
-  .Kategorie {
-    display: flex;
-    flex-direction: column;
-  }
-  .K1 {
-    margin: auto;
-    width: 100%;
-    height: 20%vh;
-  }
-  }
+    .Kategorie {
+        display: flex;
+        flex-direction: column;
+    }
+    .K1 {
+        margin: auto;
+        width: 100%;
+        height: 20%vh;
+    }
+}

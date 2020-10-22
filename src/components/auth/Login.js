@@ -13,6 +13,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
     const loading = useSelector((state) => state.authentication.loading);
     const auth = useSelector((state) => state.authentication)
 
+    
     function clearAlert() {
       dispatch(authActions.clearError());
     }
@@ -80,19 +81,11 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
             <div className="form-group">
               <button
                 type="submit"
-                className={
-                  "button is-info is-medium is-full-width " +
-                  (loading ? "is-loading" : "")
-                }
-                style={{
-                  margin: "2rem 0 2rem 0",
-                }}
+              
               >
                 Zaloguj się
               </button>
-              {auth.error ? (
-                <ClearErrorButton>{auth.error}</ClearErrorButton>
-              ) : null}
+              {auth.error ? <ClearErrorButton>Bad Credentials</ClearErrorButton> : null}
             </div>
           </Form>
         )}
