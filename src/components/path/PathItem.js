@@ -4,7 +4,7 @@ import {useSelector} from 'react-redux'
 import PropTypes from 'prop-types'
 import psycha from "../../assets/psycha.png"
 
-const PathItem = ({title, id}) => {
+const PathItem = ({title, id, image}) => {
 
     const user = useSelector(state => state.user.user);
     const loggedIn = useSelector(state => state.authentication.loggedIn);
@@ -13,8 +13,8 @@ const PathItem = ({title, id}) => {
         <div className="K1">
             <div className="contener-k1">
                 <h1 id="tytul-kategoria" >{title}</h1>
-                {loggedIn ? <PathRedirectButton image={psycha} id={id} /> : null}
-               {!loggedIn ? (<img src={psycha} alt=""/>) : null } 
+                {loggedIn ? <PathRedirectButton id={id} image={image} /> : null}
+               {!loggedIn ? (<img src={image} alt=""/>) : null } 
             </div>
         </div>
         
