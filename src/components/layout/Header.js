@@ -6,6 +6,9 @@ import {useSelector, useDispatch} from 'react-redux'
 import LoginButton from '../auth/LoginButton';
 import LoggedButton from '../auth/LoggedButton';
 import PropTypes from 'prop-types';
+import { authActions } from '../../actions';
+import NavbarLogged from '../auth/NavbarLogged';
+import NavbarLogin from '../auth/NavbarLogin';
 
 function Header() {
     const burger = document.querySelector('.burger');
@@ -34,7 +37,7 @@ function Header() {
         </div>
         <nav className="navbar">
             <div className={active ? "nav-links nav-active" : "nav-links"}>
-                    <li className="zalogujburger"><a className="nav-link"><Link className="is-white" to="/login">Zaloguj</Link></a></li>
+                    {loggedIn ? <NavbarLogged /> : <NavbarLogin />}
                     <li><a className="nav-link"><Link className="is-white" to="/faq">FAQ</Link></a></li>
                     <li><a className="nav-link"><Link className="is-white" to="/profile">Profil</Link></a></li>
             </div>
@@ -48,6 +51,10 @@ function Header() {
     </header>
     );
 }
+
+
+
+
 
 Header.propTypes = {
     loggedIn: PropTypes.bool,
