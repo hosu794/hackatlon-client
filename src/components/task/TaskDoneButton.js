@@ -15,7 +15,7 @@ import PropTypes from 'prop-types'
     }
 
     return (
-        <button onClick={createDoneTask}>Check task</button>
+        <button onClick={createDoneTask}>Wykonałem zadanie</button>
     )
 }
 

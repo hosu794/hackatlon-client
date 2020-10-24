@@ -16,7 +16,7 @@ function DoneTasks() {
 
     return (
         <div>
-            <h1>Zaliczone zadania:</h1>
+            <h1 className="zaliczone-zadania-napis">Zaliczone zadania:</h1>
             {content ? content.map(item => (
                 <DoneTaskItem path={item.task.path.title} title={item.task.title} id={item.id} key={item.id}/>
             )) : "Loading..."}
