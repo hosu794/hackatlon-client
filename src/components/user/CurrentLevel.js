@@ -13,8 +13,8 @@ import PropTypes from 'prop-types'
     }, [])
 
     return (
-        <div>
-           Obecny poziom:  {level ? level.level : "Loading..."}
+        <div className="poziomy">
+          <h3>Obecny poziom:</h3> <p className="poziom">{level ? level.level : "Loading..."} </p>
         </div>
     )
 }

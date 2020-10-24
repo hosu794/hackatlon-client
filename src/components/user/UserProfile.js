@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 
     return (
         <div>
-            <h1>User Profile</h1>
+            <h1 className="profil">Profil</h1>
             {user ? <UserCredentials username={user.username} name={user.name} /> : 'Loading...'}
         </div>
     )
