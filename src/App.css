@@ -132,6 +132,8 @@ nav {
     display: none;
 }
 
+/* -----------------------------------------------About------------------------------------------------ */
+
 .sekcja-1 {
     min-height: 75vh;
     width: 90%;
@@ -150,20 +152,17 @@ nav {
 }
 
 .intro {
-    width: 50%;
+    width: 45%;
     margin-top: 6%;
 }
-
 #onas {
     color: #8ddca4;
 }
-
 #paragraf1 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bolder;
     padding: 2vh 0;
 }
-
 #paragraf2 {
     font-size: 18px;
     font-weight: lighter;
@@ -179,44 +178,39 @@ nav {
     margin-bottom: 20px;
     background-color: #2e45ce;
 }
-
 .rejestracja a {
     text-decoration: none;
     color: #ffffff;
 }
-
-#paragraf1,
-#paragraf2 {
+#paragraf1,#paragraf2 {
     width: 80%;
 }
-
 .sekcja-2 {
     background-color: #eeeeee;
-    min-height: 75vh;
+    min-height: 60vh;
 }
+
 
 .Kategorie {
     display: flex;
-}
-#kategorie-napis {
-  color: #1F1F1F;
-  font-size: 35px;
-  padding-top: 3%;
-}
-.kategorie-napis-div {
-  width: 20%;
-  margin-left: 5%;
-}
-
-.break {
-    flex-basis: 100%;
-    height: 0;
 }
 
 footer {
     height: 20vh;
     text-align: center;
     padding: 10vh 0;
+}
+
+@media only screen and (max-width: 1850px) {
+    .intro {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1630px) {
+    .intro {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -252,7 +246,7 @@ footer {
         opacity: 100;
     }
     .nav-link {
-        padding: 9vh 47vh;
+        padding: 9vh 30vh;
     }
     .nav-link:hover {
         background-color: #2e45ce;
@@ -272,6 +266,7 @@ footer {
     }
     .intro {
         width: 100%;
+        margin-top: 10%;
     }
     .rejestracja {
         width: 50%;
@@ -280,16 +275,19 @@ footer {
         margin-bottom: 80px;
         margin-top: 15px;
     }
+
+    #paragraf1 {
+        font-size: 35px;
+    }
     .sekcja-1 {
-        margin-top: 0%;
+        margin-top: 6%;
     }
 }
 
-@media only screen and (max-width: 1274px) {
+@media only screen and (max-width: 1625px) {
     .intro-image {
         position: absolute;
         margin-left: 50%;
-        margin-top: 2%;
         z-index: -1;
     }
     .intro {
@@ -297,24 +295,50 @@ footer {
     }
 }
 
-@media only screen and (max-width: 850px) {
-    .intro-image {
-        margin-left: 30%;
+@media only screen and (max-width: 900px) {
+    .intro {
+        width: 95%;
     }
 }
 
-@media only screen and (max-width: 746px) {
-    .intro {
+@media only screen and (max-width: 646px) {
+    #paragraf1,#paragaf2 {
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
+
+    .intro-image {
+        display: none;
+    }
     .nav-links {
         background-position-x: 10px;
     }
     .rejestracja {
-        width: 45%;
+        width: 50%;
+    }
+    .sekcja-1 {
+        width: 100%;
+        margin-left: 20px;
+        margin-top: ;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #paragraf1 {
+        font-size: 25px;
+        padding: 5px 0;
+    }
+    #paragraf2 {
+        font-size: 17px;
+    }
+    .sekcja-1 {
+        height: 20vh;
+    }
+    .rejestracja {
+        width: 100%;
+        margin-top: 20px;
     }
 }
 
@@ -412,7 +436,7 @@ footer {
 /* ----------------------------------------KATEGORIE------------------------------------------------ */
 
 .K1 {
-    height: 75vh;
+    min-height: 60vh;
     width: 20%;
     background-color: transparent;
 }
@@ -427,14 +451,109 @@ footer {
     background-color: #E8E8E8;
 }
 
+.K1 img {
+    margin-top: 25%;
+    margin-left: 15%;
+}
+
+
+
 @media only screen and (max-width: 1400px) {
     .Kategorie {
         display: flex;
         flex-direction: column;
-    }
+    }    
     .K1 {
-        margin: auto;
         width: 100%;
-        height: 20%vh;
+    }
+    .K1 img {
+        margin-top: 10%;
+        margin-left: 40%;
     }
 }
+
+@media only screen and (max-width: 700px) {
+    .K1 img {
+        margin-top: 10%;
+        margin-left: 27%;
+    }
+}
+
+/* -------------------------------TASKS-------------------------------- */
+.napis-zadania h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+.tasks {
+    display: flex;
+    flex-direction: column;
+    min-height: 8vh;
+    background-color: white;
+    color: #1b1e2f;
+    border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 2vh;
+    text-align: left;
+}
+
+.tasks p {
+    font-size: 23px;
+    padding-left: 10px;
+    flex: 1;
+}
+.tasks button {
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    width: 120px;
+    color: #2e45ce;
+}
+
+.tasks button:hover {
+    margin-left: 5px;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1b1e2f;
+    width: 120px;
+    color: white;
+}
+
+@media only screen and (max-width: 1400px) {
+    .tasks {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .tasks {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .tasks {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tasks {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .tasks {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tasks {
+        width: 95%;
+    }
+}
+
+
