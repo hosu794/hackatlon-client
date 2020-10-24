@@ -14,7 +14,7 @@ const PathItem = ({title, id, image}) => {
             <div className="contener-k1">
                 <h1 id="tytul-kategoria" >{title}</h1>
                 {loggedIn ? <PathRedirectButton id={id} image={image} /> : null}
-               {!loggedIn ? (<img src={image} alt=""/>) : null } 
+               {!loggedIn ? (<img className="center" src={image} alt=""/>) : null } 
             </div>
         </div>
         
