@@ -481,81 +481,223 @@ footer {
 
 /* -------------------------------TASKS-------------------------------- */
 .napis-zadania h1 {
-    text-align: center;
-    margin: 20px 0;
+    width: 40%;
+    margin: auto;
+    padding: 20px 0;
+    padding-bottom: 40px;
 }
 .tasks {
     display: flex;
     flex-direction: column;
     min-height: 8vh;
-    background-color: white;
-    color: #1b1e2f;
+    box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, .3);
+    border: .5px solid #8ddca4;
     border-radius: 10px;
     margin: auto;
     width: 40%;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
     text-align: left;
 }
 
 .tasks p {
     font-size: 23px;
-    padding-left: 10px;
+    padding: 10px;
     flex: 1;
 }
 .tasks button {
     font-size: 18px;
     border: none;
     background-color: transparent;
-    width: 120px;
-    color: #2e45ce;
+    width: 200px;
 }
 
 .tasks button:hover {
-    margin-left: 5px;
-    margin-bottom: 3px;
     border: none;
-    border-radius: 4px;
-    background-color: #1b1e2f;
-    width: 120px;
-    color: white;
+    background-color: transparent;
+    border-radius: 0px;
+    color: #8ddca4 ;
 }
 
 @media only screen and (max-width: 1400px) {
-    .tasks {
+    .tasks,.napis-zadania h1 {
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 1120px) {
-    .tasks {
+    .tasks,.napis-zadania h1 {
         width: 60%;
     }
 }
 
 @media only screen and (max-width: 950px) {
-    .tasks {
+    .tasks,.napis-zadania h1 {
         width: 70%;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .tasks {
+    .tasks,.napis-zadania h1 {
         width: 80%;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .tasks {
+    .tasks,.napis-zadania h1 {
         width: 90%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .tasks {
+    .tasks,.napis-zadania h1 {
         width: 95%;
     }
 }
 
 .is-warning {
     color: red;
+}
+
+
+/* ----------------------------------------FAQ------------------------------------------------ */
+.napis-faq{
+    width: 50%;
+    margin: auto;
+}
+.napis-faq h1 {
+    margin-top: 50px;
+}
+.faq {
+    margin: 40px 0;
+}
+
+.faq-pytanie {
+    color: #8ddca4;
+    font-size: 30px;
+}
+
+.faq-odp {
+    font-size: 20px;
+}
+
+/* ----------------------------------------Profil------------------------------------------------ */
+
+.profil {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding: 5vh 0;
+    padding-bottom: 2vh;
+    font-size: 35px;
+    text-shadow: 4px 2px #2e45ce;
+}
+.profil-dane {
+    width: 40%;
+    margin: auto;
+    padding: 1vh 0;
+}
+
+.profil-dane h1 {
+    font-size: 30px;
+    text-shadow: 4px 2px #2e45ce;
+}
+
+.profil-dane h3 {
+    font-size: 30px;
+    text-shadow: 4px 0px #2e45ce;
+}
+
+.profil-dane p {
+    color: #8ddca4;
+    font-size: 25px;
+}
+
+.poziom {
+    color: #8ddca4;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.obecny-poziom {
+    color: white;
+}
+
+.zaliczone-zadania-napis {
+    width: 40%;
+    margin: auto;
+    padding: 2vh 0;
+    font-size: 30px;
+    text-shadow: 4px 2px #2e45ce;
+}
+.ukonczone-zadanie {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 8vh;
+    box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, .3);
+    border: .5px solid #8ddca4;
+    border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 3vh;
+    text-align: left;
+}
+
+.ukonczone-zadanie h1 {
+    font-size: 23px;
+}
+
+.ukonczone-zadanie p {
+    font-size: 16px;
+}
+
+.ukonczone-zadanie button {
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    width: 120px;
+}
+
+.ukonczone-zadanie button:hover {
+    border: none;
+    background-color: transparent;
+    border-radius: 0px;
+    color: #8ddca4 ;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+        width: 95%;
+    }
 }

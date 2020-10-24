@@ -27,7 +27,7 @@ import React from 'react'
     ]
 
     return (
-        <div>
+        <div className="napis-faq">
             <h1>FAQ</h1>
             {faqArray.map(item => (
               <FaqItem title={item.title} answear={item.answear} />
@@ -37,9 +37,9 @@ import React from 'react'
 }
 
 const FaqItem = ({title, answear}) => (
-    <div>
-        <h1>Pytanie: {title}</h1>
-        <p>Odpowiedz: {answear}</p>
+    <div className="faq">
+        <h1 className="faq-pytanie">{title}</h1>
+        <p className="faq-odp">{answear}</p>
     </div>
 )
 

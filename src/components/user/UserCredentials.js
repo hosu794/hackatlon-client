@@ -7,9 +7,11 @@ function UserCredentials({username, name}) {
 
     return(
         <div>
-            <h1>Nazwa użytkownika: {username}</h1>
-            <p>Nazwa: {name}</p>
+            <div className="profil-dane">
+            <h1>Nazwa użytkownika:</h1> <p>{username}</p>
+            <h1>Imię i Nazwisko:</h1> <p>{name}</p>
             <CurrentLevel />
+            </div>
             <DoneTasks />
         </div>
     )

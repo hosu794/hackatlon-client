@@ -10,7 +10,6 @@ function PathRedirectButton({ id, image }) {
      <div>
        <Link to={link}>  
          <img src={image} alt=""/>
-       <button>Go to links</button>
         </Link>
      </div>
    )
