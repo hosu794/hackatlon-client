@@ -187,7 +187,6 @@ nav {
 }
 .sekcja-2 {
     background-color: #eeeeee;
-    min-height: 60vh;
 }
 
 
@@ -434,9 +433,15 @@ footer {
 
 
 /* ----------------------------------------KATEGORIE------------------------------------------------ */
+.K1 img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+}
 
 .K1 {
-    min-height: 60vh;
+    min-height: 50vh;
     width: 20%;
     background-color: transparent;
 }
@@ -449,16 +454,13 @@ footer {
 
 .K1:hover {
     background-color: #E8E8E8;
-}
-
-.K1 img {
-    margin-top: 25%;
-    margin-left: 15%;
+    border: 3px solid #8ddca4;
 }
 
 
 
-@media only screen and (max-width: 1400px) {
+
+@media only screen and (max-width: 1300px) {
     .Kategorie {
         display: flex;
         flex-direction: column;
@@ -466,18 +468,27 @@ footer {
     .K1 {
         width: 100%;
     }
-    .K1 img {
-        margin-top: 10%;
-        margin-left: 40%;
+}
+
+
+
+@media only screen and (max-width: 1300px) {   
+    .K1 {
+        width: 50%;
+        margin: auto;
+        margin-top: 0%;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .K1 img {
-        margin-top: 10%;
-        margin-left: 27%;
+@media only screen and (max-width: 800px) {   
+    .K1 {
+        width: 100%;
+        margin-top: 0%;
+        margin: auto;
     }
 }
+
+
 
 /* -------------------------------TASKS-------------------------------- */
 .napis-zadania h1 {
