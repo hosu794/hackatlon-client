@@ -89,7 +89,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
               >
                 Zaloguj się
               </button>
-              {auth.error ? <p>Złe dane </p> : null}
+              {auth.error ? <p>Nieprawidłowy login lub hasło. Spróbuj ponownie.</p> : null}
             </div>
           </Form>
         )}

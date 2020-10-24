@@ -2,6 +2,12 @@
     height: 70vh;
     overflow: hidden;
 }
+
+.sekcja-login p {
+    color: red;
+    padding-top: 20px;
+    font-size: 20px;
+}
 .login-box {
     color: #1b1e2f ;
     margin: auto;
@@ -35,6 +41,7 @@
     margin: 10px 0 18px 0;
     padding: 0 10px;
     outline: none;
+    color: white;
 }
 .input:focus {
     border-bottom:2px solid #8ddca4;

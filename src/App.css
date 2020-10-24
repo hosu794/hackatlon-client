@@ -307,6 +307,11 @@ footer {
     }
 }
 
+@media only screen and (max-width: 700px) {
+    .intro-image {
+        display: none;
+    }
+}
 @media only screen and (max-width: 646px) {
     #paragraf1,#paragaf2 {
         width: 100%;
@@ -343,10 +348,28 @@ footer {
         height: 20vh;
     }
     .rejestracja {
-        width: 100%;
+        width: 70%;
         margin-top: 20px;
     }
 }
+
+@media only screen and (max-width: 300px) {
+    #paragraf1 {
+        font-size: 25px;
+        padding: 5px 0;
+    }
+    #paragraf2 {
+        font-size: 17px;
+    }
+    .sekcja-1 {
+        height: 100vh;
+    }
+    .rejestracja {
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
 
 
 /*----------------------------------------------------------------------------------
