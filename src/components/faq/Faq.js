@@ -4,26 +4,29 @@ import React from 'react'
 
     const faqArray = [
         {
-            title: 'Jakie efekty daję używanie naszej aplikacji?', 
-            answear: 'Podtrzymuje motywacje i daję energię do działania'
+            title: 'Jaki cel ma nasza aplikacja?', 
+            answear: 'HABITER powstał w celu kontrolowania swoich codziennych aktywności i przywiązywania wagi do małych rzeczy, które możemy wykonać w ciągu dnia.'
+        },
+
+        {
+            title: "Jak zdobyć większy poziom?",
+            answear: "Poziom wzrasta wraz z ilością wykonanych zadań."
+        },
+        {
+            title: "Dlaczego nie mogę przejść do zadań?",
+            answear: "Aby przejść do zadań należy się zalogować i nacisnąć na obrazek symbolizujący kategorie."
+        },
+        {
+            title: "", 
+            answear: ""
         },
         {
             title: 'Jakich technologii użyliśmy do stworzenia naszej aplikacji?', 
-            answear: `Do stworzenia backendu użyliśmy języka programowania Java wraz z Spring Frameworkiem oraz bazy danych Postresql. 
+            answear: `Do stworzenia backendu użyliśmy języka programowania Java wraz z Spring Frameworkiem oraz bazy danych PostgreSQL. 
                     Natomiast do napisania klienta wybraliśmy Javasript wraz z Frameworkiem React.`
         },
-        {
-            title: "Ile czasu zajęło nam stworzenie aplikacji?",
-            answear: "Od napisania pierwszej linijki i ostatniej kodu zajęło nam około 30dni."
-        },
-        {
-            title: "Ile osób pracowało przy aplikacji?",
-            answear: "Łącznie pracowało 4 osoby."
-        },
-        {
-            title: "W jakiego powodu stworzyliśmy aplikację?", 
-            answear: "Stworzyliśmy aplikacji, aby pomóc innym w realizaji ich marzeń i celów."
-        }
+
+        
     ]
 
     return (

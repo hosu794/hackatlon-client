@@ -1,3 +1,6 @@
+html, body {
+    overflow-x: hidden;
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,7 @@ body {
     background-color: #1b1e2f;
     font-family: "Mina", sans-serif;
     color: #ffffff;
+    position: relative;
 }
 
 
@@ -198,6 +202,7 @@ footer {
     height: 20vh;
     text-align: center;
     padding: 10vh 0;
+    overflow-y: hidden;
 }
 
 @media only screen and (max-width: 1850px) {
@@ -223,6 +228,7 @@ footer {
         display: flex;
     }
     .nav-links {
+        display: none;
         position: absolute;
         right: 0px;
         height: 90vh;
@@ -231,7 +237,7 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        transform: translateX(150%);
+        transform: translateX(200%);
         transition: transform 0.5s ease-in;
         margin-top: 20px;
         z-index: 1;
@@ -281,6 +287,7 @@ footer {
     .sekcja-1 {
         margin-top: 6%;
     }
+
 }
 
 @media only screen and (max-width: 1625px) {
@@ -465,14 +472,6 @@ footer {
         display: flex;
         flex-direction: column;
     }    
-    .K1 {
-        width: 100%;
-    }
-}
-
-
-
-@media only screen and (max-width: 1300px) {   
     .K1 {
         width: 50%;
         margin: auto;
