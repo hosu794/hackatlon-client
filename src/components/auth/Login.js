@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ClearErrorButton from './ClearErrorButton';
 import PropTypes from 'prop-types'
 
@@ -14,6 +14,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
     const loading = useSelector((state) => state.authentication.loading);
     const auth = useSelector((state) => state.authentication)
 
+    useEffect(() => {
+     dispatch(authActions.clearError());
+    }, [])
     
     function clearAlert() {
       dispatch(authActions.clearError());
@@ -86,7 +89,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
               >
                 Zaloguj się
               </button>
-              {auth.error ? <ClearErrorButton>Bad Credentials</ClearErrorButton> : null}
+              {auth.error ? <p>Złe dane </p> : null}
             </div>
           </Form>
         )}

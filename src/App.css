@@ -438,3 +438,7 @@ footer {
         height: 20%vh;
     }
 }
+
+.is-warning {
+    color: red;
+}
