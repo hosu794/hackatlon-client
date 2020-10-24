@@ -580,6 +580,36 @@ footer {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 1600px) {
+    .napis-faq {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .napis-faq {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .napis-faq {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .napis-faq {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .napis-faq {
+        width: 99%;
+    }
+}
+
 /* ----------------------------------------Profil------------------------------------------------ */
 
 .profil {
