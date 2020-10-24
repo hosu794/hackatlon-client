@@ -11,10 +11,7 @@
     max-width: 90%;
     padding: 20px;
     background: #1b1e2f;
-    box-shadow: 10px 10px 8px 10px rgba(0,0,0,.3);
-}
-.login-content {
-    
+    box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, .3);
 }
 
 .logowanie-napis {
@@ -22,7 +19,6 @@
     margin: auto;
     text-align: center;
     width: 250px;
-    border: 2px solid #8ddca4;
     background: #1b1e2f;
     border-radius: 30px;
     color: white;
@@ -52,7 +48,7 @@
     margin-bottom: 15px;
 }
 .form-group button {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     text-align: center;
     width: 150px;
@@ -60,9 +56,10 @@
     color: #1b1e2f;
     border: 2px solid #8ddca4;
     background: #1b1e2f;
-    border-radius: 30px;   
+    border-radius: 4px;   
     outline: none; 
     color: white;
+    margin-top: 20px;
 }
 .form-group button:hover {
     cursor: pointer;

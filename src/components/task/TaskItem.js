@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
  function TaskItem({id, title}) {
     return (
-        <div>
+        <div className="tasks">
             <p>{title}</p>
             <TaskDoneButton id={id} />
         </div>

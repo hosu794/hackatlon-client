@@ -15,7 +15,7 @@ function Tasks(props) {
     }, [content])
 
     return (
-        <div> 
+        <div className="napis-zadania"> 
             <h1>Zadania</h1>
             {content ? content.map(item => (
                <TaskItem  key={item.id} title={item.title} id={item.id} />
