@@ -7,13 +7,14 @@ import psycha from "../../assets/psycha.png"
 const PathItem = ({title, id}) => {
 
     const user = useSelector(state => state.user.user);
+    const loggedIn = useSelector(state => state.authentication.loggedIn);
 
     return (
         <div className="K1">
             <div className="contener-k1">
                 <h1 id="tytul-kategoria" >{title}</h1>
-                {user ? <PathRedirectButton id={id} /> : null}
-                <img src={psycha} alt=""/>
+                {loggedIn ? <PathRedirectButton image={psycha} id={id} /> : null}
+               {!loggedIn ? (<img src={psycha} alt=""/>) : null } 
             </div>
         </div>
         

@@ -2,13 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'
 
-function PathRedirectButton({ id }) {
+function PathRedirectButton({ id, image }) {
 
     const link = `/task/path/${id}`;
 
    return(
      <div>
-       <Link to={link}><button>Go to links</button></Link>
+       <Link to={link}>  
+         <img src={image} alt=""/>
+       <button>Go to links</button>
+        </Link>
      </div>
    )
 
