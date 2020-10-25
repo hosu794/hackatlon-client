@@ -1,6 +1,8 @@
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -136,6 +138,7 @@ nav {
     display: none;
 }
 
+
 /* -----------------------------------------------About------------------------------------------------ */
 
 .sekcja-1 {
@@ -159,14 +162,17 @@ nav {
     width: 45%;
     margin-top: 6%;
 }
+
 #onas {
     color: #8ddca4;
 }
+
 #paragraf1 {
     font-size: 45px;
     font-weight: bolder;
     padding: 2vh 0;
 }
+
 #paragraf2 {
     font-size: 18px;
     font-weight: lighter;
@@ -182,17 +188,20 @@ nav {
     margin-bottom: 20px;
     background-color: #2e45ce;
 }
+
 .rejestracja a {
     text-decoration: none;
     color: #ffffff;
 }
-#paragraf1,#paragraf2 {
+
+#paragraf1,
+#paragraf2 {
     width: 80%;
 }
+
 .sekcja-2 {
     background-color: #eeeeee;
 }
-
 
 .Kategorie {
     display: flex;
@@ -280,14 +289,12 @@ footer {
         margin-bottom: 80px;
         margin-top: 15px;
     }
-
     #paragraf1 {
         font-size: 35px;
     }
     .sekcja-1 {
         margin-top: 6%;
     }
-
 }
 
 @media only screen and (max-width: 1625px) {
@@ -312,14 +319,15 @@ footer {
         display: none;
     }
 }
+
 @media only screen and (max-width: 646px) {
-    #paragraf1,#paragaf2 {
+    #paragraf1,
+    #paragaf2 {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 550px) {
-
     .intro-image {
         display: none;
     }
@@ -369,7 +377,6 @@ footer {
         margin-top: 20px;
     }
 }
-
 
 
 /*----------------------------------------------------------------------------------
@@ -463,6 +470,7 @@ footer {
 
 
 /* ----------------------------------------KATEGORIE------------------------------------------------ */
+
 .K1 img {
     display: block;
     width: 50%;
@@ -487,14 +495,11 @@ footer {
     border: 3px solid #8ddca4;
 }
 
-
-
-
 @media only screen and (max-width: 1300px) {
     .Kategorie {
         display: flex;
         flex-direction: column;
-    }    
+    }
     .K1 {
         width: 50%;
         margin: auto;
@@ -502,7 +507,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 800px) {   
+@media only screen and (max-width: 800px) {
     .K1 {
         width: 100%;
         margin-top: 0%;
@@ -511,14 +516,15 @@ footer {
 }
 
 
-
 /* -------------------------------TASKS-------------------------------- */
+
 .napis-zadania h1 {
     width: 40%;
     margin: auto;
     padding: 20px 0;
     padding-bottom: 40px;
 }
+
 .tasks {
     display: flex;
     flex-direction: column;
@@ -537,6 +543,7 @@ footer {
     padding: 10px;
     flex: 1;
 }
+
 .tasks button {
     font-size: 18px;
     border: none;
@@ -548,41 +555,47 @@ footer {
     border: none;
     background-color: transparent;
     border-radius: 0px;
-    color: #8ddca4 ;
+    color: #8ddca4;
 }
 
 @media only screen and (max-width: 1400px) {
-    .tasks,.napis-zadania h1 {
+    .tasks,
+    .napis-zadania h1 {
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 1120px) {
-    .tasks,.napis-zadania h1 {
+    .tasks,
+    .napis-zadania h1 {
         width: 60%;
     }
 }
 
 @media only screen and (max-width: 950px) {
-    .tasks,.napis-zadania h1 {
+    .tasks,
+    .napis-zadania h1 {
         width: 70%;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .tasks,.napis-zadania h1 {
+    .tasks,
+    .napis-zadania h1 {
         width: 80%;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .tasks,.napis-zadania h1 {
+    .tasks,
+    .napis-zadania h1 {
         width: 90%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .tasks,.napis-zadania h1 {
+    .tasks,
+    .napis-zadania h1 {
         width: 95%;
     }
 }
@@ -593,13 +606,16 @@ footer {
 
 
 /* ----------------------------------------FAQ------------------------------------------------ */
-.napis-faq{
+
+.napis-faq {
     width: 50%;
     margin: auto;
 }
+
 .napis-faq h1 {
     margin-top: 50px;
 }
+
 .faq {
     margin: 40px 0;
 }
@@ -643,6 +659,7 @@ footer {
     }
 }
 
+
 /* ----------------------------------------Profil------------------------------------------------ */
 
 .profil {
@@ -654,6 +671,7 @@ footer {
     font-size: 35px;
     text-shadow: 4px 2px #2e45ce;
 }
+
 .profil-dane {
     width: 40%;
     margin: auto;
@@ -692,6 +710,7 @@ footer {
     font-size: 30px;
     text-shadow: 4px 2px #2e45ce;
 }
+
 .ukonczone-zadanie {
     padding: 10px;
     display: flex;
@@ -725,42 +744,64 @@ footer {
     border: none;
     background-color: transparent;
     border-radius: 0px;
-    color: #8ddca4 ;
+    color: #8ddca4;
 }
 
-
 @media only screen and (max-width: 1400px) {
-    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+    .ukonczone-zadanie,
+    .zaliczone-zadania-napis,
+    .profil-dane,
+    .profil {
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 1120px) {
-    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+    .ukonczone-zadanie,
+    .zaliczone-zadania-napis,
+    .profil-dane,
+    .profil {
         width: 60%;
     }
 }
 
 @media only screen and (max-width: 950px) {
-    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+    .ukonczone-zadanie,
+    .zaliczone-zadania-napis,
+    .profil-dane,
+    .profil {
         width: 70%;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+    .ukonczone-zadanie,
+    .zaliczone-zadania-napis,
+    .profil-dane,
+    .profil {
         width: 80%;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+    .ukonczone-zadanie,
+    .zaliczone-zadania-napis,
+    .profil-dane,
+    .profil {
         width: 90%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .ukonczone-zadanie,.zaliczone-zadania-napis,.profil-dane,.profil {
+    .ukonczone-zadanie,
+    .zaliczone-zadania-napis,
+    .profil-dane,
+    .profil {
         width: 95%;
     }
+}
+
+.login-link {
+    text-decoration: none;
+    color: #8ddca4;
 }

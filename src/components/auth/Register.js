@@ -6,6 +6,7 @@ import {authActions, userActions} from '../../actions'
 import PropTypes from "prop-types";
 import { Formik, Form, ErrorMessage, Field } from "formik";
 import * as Yup from "yup";
+import { Link } from 'react-router-dom';
 
 
  function Register() {  
@@ -101,7 +102,7 @@ import * as Yup from "yup";
             <div className="napisy-rejestracja">
               <h1 id="start">DOŁĄCZ DO NAS</h1>
               <h2 id="konto">Posiadasz już konto?</h2>
-              <h2 id="zaloguj">Zaloguj się</h2>
+              <h2 id="zaloguj"><Link className="login-link" to="/login">Zaloguj się</Link></h2>
             </div>
           
                              <Field

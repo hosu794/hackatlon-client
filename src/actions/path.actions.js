@@ -48,7 +48,6 @@ function getPathById(pathId, service = pathService.getPathById) {
 
         return service(pathId).then(
             (response) => {
-                console.log(response.data)
                 dispatch(success(response.data));
             },
             (error) => {
